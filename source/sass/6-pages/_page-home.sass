@@ -1,0 +1,169 @@
+#header
+    background: url("../img/heroBackgroundSmall.jpg") no-repeat
+    background-size: cover
+    background-position: center
+    height: 90vh
+    color: white
+    text-align: center
+    overflow: hidden
+    h1
+        color: white
+        text-transform: uppercase
+        margin-bottom: 10px
+        @media only screen and (max-width: 600px)
+            margin-top: 40px
+    p
+        font-size: 18px
+        font-weight: 600
+        @media only screen and (max-width: 600px)
+            margin: 30px
+    img
+        max-width: 400px 
+        width: 100%
+    article
+        width: 90%
+        margin: 0 auto
+        
+
+#brands ul
+    padding: 20px 0
+    background: white
+    display: grid
+    grid-template-columns: repeat(6, auto)
+    @media only screen and (max-width: 600px)
+        grid-template-columns: repeat(3, auto)
+    li 
+        list-style: none
+    li img
+        width: 100%
+
+#features 
+    background: #f9f9f9
+    text-align: center
+    position: relative
+    height: 500px
+
+    @media only screen and (max-width: 600px)
+        height: auto
+    
+    &:after
+        border-bottom: 1px solid rgba(0,0,0,0.1)
+        bottom: 0
+        position: absolute
+        background: inherit
+        height: 100%
+        left: 0
+        right: 0
+        content: ""
+        transform: skewY(-10deg)
+        transform-origin: 100%
+        z-index: -2
+    h2 
+        margin: 80px 0
+
+.cards
+    display: grid
+    grid-template-columns: repeat(3, auto)
+    grid-gap: 30px
+    @media only screen and (max-width: 600px)
+        grid-template-columns: repeat(1, auto)
+        
+
+.feature-card
+    background: white
+    padding: 30px
+    border-radius: 4px
+    box-shadow: 0 12px 10px -10px rgba(0,0,0,0.2)
+
+    h3
+        margin: 10px 0 0
+    
+.car
+    border-top: 3px solid #30E2C0
+.shoe
+    border-top: 3px solid #510EED
+.device
+    border-top: 3px solid $ocean
+
+#discount
+    margin-top: 100px
+.discountLayout
+    display: flex
+    align-items: center
+    justify-content: center
+    @media only screen and (max-width: 600px)
+        display: block
+        text-align: center
+
+    img
+        width: 100%
+        max-width: 400px
+    .offer
+        width: 40%
+        margin: 0 auto
+        @media only screen and (max-width: 600px)
+            width: 100%
+            
+
+    .offer .button
+        background: rgb(0,158,253)
+        background: linear-gradient(140deg, rgba(0,158,253,1) 0%, rgba(21,201,203,1) 48%, rgba(42,245,152,1) 100%)
+        color: white
+        padding: 20px 80px
+        font-size: 18px
+    
+#download
+    background: url("../img/downloadBackgroundSmall.jpg") no-repeat
+    background-size: cover
+    background-position: center
+    color: white    
+    padding: 100px 0
+    margin-top: -60px
+    text-align: center
+    @media only screen and (max-width: 600px)
+        margin-top: 50px
+        padding: 50px 0
+    h2
+        font-size: 50px
+        line-height: 1.65
+        text-transform: uppercase
+        font-weight: 900
+        color: white
+        @media only screen and (max-width: 600px)
+            font-size: 42px
+    p
+        width: 100%
+        max-width: 450px
+        margin: 30px auto
+        font-weight: 800
+    
+    .button
+        position: relative
+        width: 250px
+        margin: 10px
+        padding-left: 75px
+    .button:hover
+        color: black
+    
+    .apple:before
+        position: absolute
+        display: block
+        left: 20%
+        top: 16px
+        content: url("../img/appleicon.png")
+    .google:before
+        position: absolute
+        display: block
+        left: 20%
+        top: 18px
+        content: url("../img/playicon.png")
+
+footer
+    text-align: center
+    padding: 60px 0
+
+    li 
+        list-style: none
+        a 
+            padding: 0 20px  
+            text-transform: uppercase

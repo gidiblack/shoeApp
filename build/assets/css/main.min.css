@@ -201,6 +201,9 @@ body {
   width: 100%;
   max-width: 1100px;
   margin: 0 auto; }
+  @media only screen and (max-width: 1000px) {
+    .wrapper {
+      width: 90%; } }
 
 section {
   display: -webkit-box; }
@@ -326,6 +329,69 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+.main-nav {
+  display: flex;
+  margin-top: 20px;
+  padding: 0; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto; }
+  .main-nav a {
+    color: white;
+    display: block;
+    border-radius: 4px;
+    padding: 10px 50px;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    transition: all 0.2s ease; }
+  .main-nav a:hover, .main-nav a:active {
+    color: #00adff; }
+
+a.download {
+  background: white;
+  color: #00adff;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+  margin-left: 25px; }
+
+.responsive-nav {
+  display: flex; }
+
+li.nav-toggle {
+  display: none; }
+  li.nav-toggle a {
+    padding-right: 0; }
+
+@media screen and (max-width: 750px) {
+  .responsive-nav {
+    display: none; }
+  li.nav-toggle {
+    display: block;
+    z-index: 100; }
+  .responsive-nav.unfold {
+    display: block;
+    width: 100%;
+    background: #1f1f1f;
+    position: absolute;
+    top: 0;
+    right: 0; }
+  .responsive-nav.unfold li {
+    display: block; }
+  .responsive-nav.unfold a {
+    display: block;
+    text-align: center;
+    padding: 40px; }
+  .responsive-nav.unfold a:hover {
+    transform: translate(0);
+    color: #00adff; }
+  .responsive-nav.unfold a.download {
+    background: inherit;
+    color: white;
+    margin-left: 0; }
+  .responsive-nav.unfold a.download:hover {
+    color: #00adff; } }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -342,3 +408,174 @@ hr {
   top: 0;
   width: 100%;
   left: 0; }
+
+#header {
+  background: url("../img/heroBackgroundSmall.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  color: white;
+  text-align: center;
+  overflow: hidden; }
+  #header h1 {
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+    @media only screen and (max-width: 600px) {
+      #header h1 {
+        margin-top: 40px; } }
+  #header p {
+    font-size: 18px;
+    font-weight: 600; }
+    @media only screen and (max-width: 600px) {
+      #header p {
+        margin: 30px; } }
+  #header img {
+    max-width: 400px;
+    width: 100%; }
+  #header article {
+    width: 90%;
+    margin: 0 auto; }
+
+#brands ul {
+  padding: 20px 0;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto); }
+  @media only screen and (max-width: 600px) {
+    #brands ul {
+      grid-template-columns: repeat(3, auto); } }
+  #brands ul li {
+    list-style: none; }
+  #brands ul li img {
+    width: 100%; }
+
+#features {
+  background: #f9f9f9;
+  text-align: center;
+  position: relative;
+  height: 500px; }
+  @media only screen and (max-width: 600px) {
+    #features {
+      height: auto; } }
+  #features:after {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    bottom: 0;
+    position: absolute;
+    background: inherit;
+    height: 100%;
+    left: 0;
+    right: 0;
+    content: "";
+    transform: skewY(-10deg);
+    transform-origin: 100%;
+    z-index: -2; }
+  #features h2 {
+    margin: 80px 0; }
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 30px; }
+  @media only screen and (max-width: 600px) {
+    .cards {
+      grid-template-columns: repeat(1, auto); } }
+
+.feature-card {
+  background: white;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
+  .feature-card h3 {
+    margin: 10px 0 0; }
+
+.car {
+  border-top: 3px solid #30E2C0; }
+
+.shoe {
+  border-top: 3px solid #510EED; }
+
+.device {
+  border-top: 3px solid #00adff; }
+
+#discount {
+  margin-top: 100px; }
+
+.discountLayout {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 600px) {
+    .discountLayout {
+      display: block;
+      text-align: center; } }
+  .discountLayout img {
+    width: 100%;
+    max-width: 400px; }
+  .discountLayout .offer {
+    width: 40%;
+    margin: 0 auto; }
+    @media only screen and (max-width: 600px) {
+      .discountLayout .offer {
+        width: 100%; } }
+  .discountLayout .offer .button {
+    background: #009efd;
+    background: linear-gradient(140deg, #009efd 0%, #15c9cb 48%, #2af598 100%);
+    color: white;
+    padding: 20px 80px;
+    font-size: 18px; }
+
+#download {
+  background: url("../img/downloadBackgroundSmall.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 100px 0;
+  margin-top: -60px;
+  text-align: center; }
+  @media only screen and (max-width: 600px) {
+    #download {
+      margin-top: 50px;
+      padding: 50px 0; } }
+  #download h2 {
+    font-size: 50px;
+    line-height: 1.65;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white; }
+    @media only screen and (max-width: 600px) {
+      #download h2 {
+        font-size: 42px; } }
+  #download p {
+    width: 100%;
+    max-width: 450px;
+    margin: 30px auto;
+    font-weight: 800; }
+  #download .button {
+    position: relative;
+    width: 250px;
+    margin: 10px;
+    padding-left: 75px; }
+  #download .button:hover {
+    color: black; }
+  #download .apple:before {
+    position: absolute;
+    display: block;
+    left: 20%;
+    top: 16px;
+    content: url("../img/appleicon.png"); }
+  #download .google:before {
+    position: absolute;
+    display: block;
+    left: 20%;
+    top: 18px;
+    content: url("../img/playicon.png"); }
+
+footer {
+  text-align: center;
+  padding: 60px 0; }
+  footer li {
+    list-style: none; }
+    footer li a {
+      padding: 0 20px;
+      text-transform: uppercase; }
